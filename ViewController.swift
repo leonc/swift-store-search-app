@@ -37,6 +37,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         // set up table view
         self.tableView = UITableView(frame: CGRectMake(0, 100, self.view.bounds.size.width, self.view.bounds.size.height - 100), style: UITableViewStyle.Plain)
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "myCell")
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
